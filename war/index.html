@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Hello App Engine</title>
+</head>
+
+<body>
+  <fieldset>
+    <legend style='font-weight: bold;'>
+      Do-it-yourself (thanks to Apache Commons fileupload)
+    </legend>
+    <form method='post' enctype='multipart/form-data' action=/upload>
+      <input type=text name=mytext value='Your comment here'><input
+        type=file name=myfile><input type=file name=myfile2><input
+        type=submit value='/upload'>
+    </form>
+  </fieldset>
+
+  <br />
+
+  <fieldset>
+    <legend style='font-weight: bold;'>
+      Using blobstore
+    </legend>
+    <form method='post' enctype='multipart/form-data'
+      action=http://upload.fredsa.appspot.com/_ah/upload/AMmfu6YPjFV1fFkVYGEHhjc63N8v8TBxgoN-XrAuQQoabKsjH9J-b89kB8x4jKA1SpMHSJAnpdkXOF1wN9CSha7qaZeDIZ6R_g/ALBNUaYAAAAATYPNFKAU3FLBMJYwZm-FhnUGhp-ln12n />
+    <input type=text name=mytext value='Your comment here'><input
+      type=file name=myfile><input type=file name=myfile2><input
+      type=submit
+      value='http://upload.fredsa.appspot.com/_ah/upload/AMmfu6YPjFV1fFkVYGEHhjc63N8v8TBxgoN-XrAuQQoabKsjH9J-b89kB8x4jKA1SpMHSJAnpdkXOF1wN9CSha7qaZeDIZ6R_g/ALBNUaYAAAAATYPNFKAU3FLBMJYwZm-FhnUGhp-ln12n/'>
+    </form>
+  </fieldset>
+  <br />
+</body>
+</html>
